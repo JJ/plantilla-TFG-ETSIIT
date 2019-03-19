@@ -19,6 +19,13 @@ sigue las siguientes instrucciones.
    momento,
    [añade tu repo a a lista de TFs libres en la UGR](https://github.com/JJ/TF-libres-UGR/).
 5. Borra este fichero cuando ya lo tengas todo.
+6. Cambia al directorio del repo y borra la historia de este repo y súbelo al tuyo
+   rm -rf .git
+   git remote add origin mi-repo-en-git(hub|lab)
+   git commit -am "Commit inicial desde plantilla"
+   git push -u origin master
+
+A partir de ahí, ya puedes trabajar con tu repo de la forma habitual.
 
 Este repositorio incluye lo siguiente
 
