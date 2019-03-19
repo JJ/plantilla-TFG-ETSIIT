@@ -24,6 +24,12 @@ sigue las siguientes instrucciones.
    git remote add origin mi-repo-en-git(hub|lab)
    git commit -am "Commit inicial desde plantilla"
    git push -u origin master
+   
+7. Puedes evitar la creación de un repo git simplemente
+   descargándotelo
+   de
+   [las releases](https://github.com/JJ/plantilla-TFG-ETSIIT/releases)
+   del repo, evitando los pasos `git clone` y `rm -rf .git`.
 
 A partir de ahí, ya puedes trabajar con tu repo de la forma habitual.
 
