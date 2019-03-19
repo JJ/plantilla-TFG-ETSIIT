@@ -25,3 +25,6 @@ y de nuevo
     pdflatex proyecto.tex
 
 
+# INSTRUCCIONES
+
+Lee [INSTALL.md](INSTALL.md) para las instrucciones de uso.
