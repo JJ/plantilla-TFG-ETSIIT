@@ -1,0 +1,115 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment LaTeX Template Version 1.0 (5/5/12)
+% This template has been downloaded from: http://www.LaTeXTemplates.com
+% Original author:  Frits Wenneker (http://www.howtotex.com)
+% License: CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+\documentclass[11pt, a4paper]{book}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[utf8]{inputenc}
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage{listings} % para insertar código con formato similar al editor
+\usepackage[spanish, es-tabla]{babel} % Selecciona el español para palabras introducidas automáticamente, p.ej. "septiembre" en la fecha y especifica que se use la palabra Tabla en vez de Cuadro
+\usepackage{url} % ,href} %para incluir URLs e hipervínculos dentro del texto (aunque hay que instalar href)
+\usepackage{graphics,graphicx, float} %para incluir imágenes y colocarlas
+\usepackage[gen]{eurosym} %para incluir el símbolo del euro
+\usepackage{cite} %para incluir citas del archivo <nombre>.bib
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+\usepackage[table,xcdraw]{xcolor}
+\hypersetup{
+	colorlinks=true,	% false: boxed links; true: colored links
+	linkcolor=black,	% color of internal links
+	urlcolor=cyan		% color of external links
+}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead[L]{} % Empty left header
+\fancyhead[C]{} % Empty center header
+\fancyhead[R]{Me Llamo Así} % My name
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+%\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+\setcounter{secnumdepth}{4}
+\usepackage[Lenny]{fncychap}
+
+
+
+\begin{document}
+
+	% Plantilla portada UGR
+	\input{portada/portada}
+
+	% Plantilla prefacio UGR
+	\input{prefacios/prefacio}
+
+	% Índice de contenidos
+	\newpage
+	\tableofcontents
+
+	% Índice de imágenes y tablas
+	\newpage
+	\listoffigures
+
+	% Si hay suficientes se incluirá dicho índice
+	\listoftables 
+	\newpage
+
+	% Introducción 
+	\input{secciones/01_introduccion}
+
+	% Descripción del problema y hasta donde se llega
+	\input{secciones/02_descripcion}
+
+	% Estado del arte
+	% 	1. Crítica al estado del arte
+	% 	2. Propuesta
+	\input{secciones/03_estado_del_arte}
+	
+	\input{secciones/04_planificacion}
+
+	% Análisis del problema
+	% 1. Análisis de requisitos
+	% 2. Análisis de las soluciones
+	% 3. Solucion propuesta
+	% 4. Análisis de seguridad
+	\input{secciones/05_analisis}
+
+	% Desarrollo bajo sprints: 
+	% 	1. Permitir registros y login de usuarios
+	% 	2. Desarrollo del sistema de incidencias
+	% 	3. Desarrollo del sistema de denuncias administrativas y accidentes
+	% 	4. Desarrollo del sistema de croquis
+	%   5. Instalación de la aplicación de manera automática
+	\input{secciones/06_implementacion}
+
+	% Presupuesto
+
+	% Conclusiones
+	\input{secciones/07_conclusiones}
+
+	% Trabajos futuros
+
+
+	
+	\newpage
+	\bibliography{bibliografia}
+	\bibliographystyle{plain}
+	
+\end{document}
+
