@@ -308,3 +308,5 @@ typings/
 .vagrant/*
 
 *~
+
+package-lock.json
