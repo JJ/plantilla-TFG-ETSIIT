@@ -1,6 +1,7 @@
 # Trabajo de Fin de Grado: *Título*
 
-
+**Este sería el README de tu proyecto. Consulta las [instrucciones de
+instalación](INSTALL.md)
 
 ### Autor(a): Nombre
 ### Tutor(a)(es): Nombre(s)
