@@ -25,6 +25,11 @@ y de nuevo
 
     pdflatex proyecto.tex
 
+O directamente
+
+    make
+    
+(que habrá que editar si el nombre del archivo del proyecto cambia)
 
 # INSTRUCCIONES
 
