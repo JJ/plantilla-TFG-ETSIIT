@@ -17,13 +17,13 @@ sigue las siguientes instrucciones.
 
     git clone --depth=1 https://github.com/JJ/plantilla-TFG-ETSIIT.git
 
-   6. Cambia al directorio del repo y borra la historia de este repo y súbelo al tuyo
+   3. Cambia al directorio del repo y borra la historia de este repo y súbelo al tuyo
    rm -rf .git
    git remote add origin mi-repo-en-git(hub|lab)
    git commit -am "Commit inicial desde plantilla"
    git push -u origin master
    
-   7. Puedes evitar la creación de un repo git simplemente descargándotelo
+   4. Puedes evitar la creación de un repo git simplemente descargándotelo
    de
    [las releases](https://github.com/JJ/plantilla-TFG-ETSIIT/releases)
    del repo, evitando los pasos `git clone` y `rm -rf .git`.
