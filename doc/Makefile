@@ -1,5 +1,13 @@
+DOC := proyecto.tex
 
-all: pdf
+all: doc
 
-pdf: %.pdf: %.tex %.bib
-	pdflatex proyecto.tex && bibtex proyecto && pdflatex proyecto.tex && pdflatex proyecto.tex
+doc: $(DOC:.tex=.pdf)
+
+all: proyecto.pdf
+
+%.pdf: %.tex
+	pdflatex $< && bibtex $* && pdflatex $< && pdflatex $<
+
+
+
