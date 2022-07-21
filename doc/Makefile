@@ -6,8 +6,9 @@ doc: $(DOC:.tex=.pdf)
 
 all: proyecto.pdf
 
-%.pdf: %.tex
+%.pdf: %.tex FORCE
 	pdflatex $< && bibtex $* && pdflatex $< && pdflatex $<
 
+FORCE: 
 
 
