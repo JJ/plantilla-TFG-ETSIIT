@@ -8,26 +8,18 @@
 % \documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
 \documentclass[11pt, a4paper]{book}
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
-\usepackage[utf8]{inputenc}
 \usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
 \usepackage{listings} % para insertar código con formato similar al editor
 \usepackage[spanish, es-tabla]{babel} % Selecciona el español para palabras introducidas automáticamente, p.ej. "septiembre" en la fecha y especifica que se use la palabra Tabla en vez de Cuadro
 \usepackage{url} % ,href} %para incluir URLs e hipervínculos dentro del texto (aunque hay que instalar href)
-\usepackage{graphics,graphicx, float} %para incluir imágenes y colocarlas
+\usepackage{graphicx, float} %para incluir imágenes y colocarlas
 \usepackage[gen]{eurosym} %para incluir el símbolo del euro
 \usepackage{cite} %para incluir citas del archivo <nombre>.bib
 \usepackage{enumerate}
-\usepackage{hyperref}
-\usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{booktabs}
 
 \usepackage[table,xcdraw]{xcolor}
-\hypersetup{
-	colorlinks=true,	% false: boxed links; true: colored links
-	linkcolor=black,	% color of internal links
-	urlcolor=cyan		% color of external links
-}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{fancyhdr} % Custom headers and footers
 \pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
@@ -41,13 +33,14 @@
 \renewcommand{\footrulewidth}{0pt} % Remove footer underlines
 \setlength{\headheight}{13.6pt} % Customize the height of the header
 
-\usepackage{titlesec, blindtext, color}
-\definecolor{gray75}{gray}{0.75}
-\newcommand{\hsp}{\hspace{20pt}}
-\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
 \setcounter{secnumdepth}{4}
 \usepackage[Lenny]{fncychap}
-
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,	% false: boxed links; true: colored links
+	linkcolor=black,	% color of internal links
+	urlcolor=cyan		% color of external links
+}
 
 \begin{document}
 
