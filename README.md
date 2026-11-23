@@ -1,7 +1,6 @@
 # Trabajo de Fin de Grado: *Título*
 
-**Este sería el README de tu proyecto. Consulta las [instrucciones de
-instalación](INSTALL.md)
+**Este sería el README de tu proyecto.**
 
 ### Autor(a): Nombre
 ### Tutor(a)(es): Nombre(s)
@@ -30,7 +29,3 @@ O directamente
     make
     
 (que habrá que editar si el nombre del archivo del proyecto cambia)
-
-# INSTRUCCIONES
-
-Lee [INSTALL.md](INSTALL.md) para las instrucciones de uso.
